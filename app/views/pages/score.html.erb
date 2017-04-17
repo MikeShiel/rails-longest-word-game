@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Your Score</h1>
+  <p>Your word: <%= @attempt %></p>
+  <p> Time taken: <%= @diff%>sec</p>
+  <p>Translation: <%= @translation%></p>
+  <p>Message:
+      <p> Score! <%= @message[0] %></p>
+      <p> <%= @message[1] %></p>
+  </p>
+  <%= link_to "Play game again", game_path %>
+</div>
+
